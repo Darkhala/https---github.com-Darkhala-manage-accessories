@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./selecteditems.css">
+    <title>Selected Items</title>
+</head>
+<body>
+    <header>
+        <h1>Selected Items</h1>
+        <ul class="accessory-list">
+            <button class="show-details" onclick="showreturnedDetails('returneditems.html')">Returned Accessories</button>
+            <button class="show-details" onclick="redirectToPage('hr.html')">requested Accessories</button>
+        <a href="signup.html">Logout</a>
+    </header>
+    <!-- Date filter -->
+    <div class="filter-section">
+        <label for="filterDate">select a Date:</label>
+        <input type="date" id="filterDate">
+        <button onclick="filterByDate()">View report</button>
+
+    </div>
+    <script>
+        // Filter items by date
+function filterByDate() {
+    const selectedDate = document.getElementById('filterDate').value;
+
+    // Call populateSelectedItems function with date filter for each section
+    populateSelectedItems('selectedCablesContainer', 'selectedcables', selectedDate);
+    populateSelectedItems('selectedKeyboardsContainer', 'selectedkeyboards', selectedDate);
+    populateSelectedItems('selectedMouseContainer', 'selectedmouse', selectedDate);
+    populateSelectedItems('selectedLaptopsContainer', 'selectedlaptops', selectedDate);
+    populateSelectedItems('selectedDevicesContainer', 'selecteddevices', selectedDate);
+}
+
+    </script>
+    <h1>Selected Cables</h1>
+    <div id="selectedCablesContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Selected Keyboards</h1>
+    <div id="selectedKeyboardsContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Selected Mouse</h1>
+    <div id="selectedMouseContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Selected Laptops</h1>
+    <div id="selectedLaptopsContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Selected Devices</h1>
+    <div id="selectedDevicesContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Selected Toolkits</h1>
+    <div id="selectedToolkitsContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <script>
+        function redirectToPage() {
+        // Redirect to another HTML page
+        window.location.href = "hr.html";
+    }
+</script>
+<script>
+function showreturnedDetails() {
+// Redirect to another HTML page
+window.location.href = "returneditems.html";
+}
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./selecteditems.js"></script>
+</body>
+</html>

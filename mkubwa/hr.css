@@ -1,0 +1,130 @@
+
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0; 
+    background: url(images/back1.jpg);   
+
+}
+
+header {
+    background-color:#316FF6;
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+}
+header h1{
+    float: left;
+    margin-right: 50%;
+}
+header a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    float: right;
+    margin-right: 50px;
+    color: wheat;
+}
+.holder{
+    padding-top: 140px;
+    background-color: white;
+    background-size: cover;
+    justify-content: center; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    background-image: url(images/techbg.png);
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2.2);
+}
+
+h2 {
+    color: #333;
+}
+
+.accessory-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accessory-name {
+    font-weight: bold;
+}
+
+#processRequestForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #111;
+    border-radius: 3px;
+}
+
+button[type="button"] {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #555;
+}
+.accessory-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #316FF6;
+    border-radius: 5px;
+    background-color: #fdfeff;
+    font-size: 16px;
+}
+.accessory-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.accessory-details.active {
+    display: block;
+}
+.show-details{
+    background-color: #316FF6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9);
+    color: #fff;
+    width: 40% !important;
+    height: 50px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}

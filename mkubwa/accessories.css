@@ -1,0 +1,123 @@
+
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;  
+}
+
+header {
+    background-color:#316FF6;
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+}
+header h1{
+    float: left;
+    margin-right: 50%;
+}
+header a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    float: right;
+    margin-right: 10px;
+    color: wheat;
+}
+.holder{
+    padding-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    background-image: url(images/yobg.png);
+
+}
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.container {
+    margin: 0 10px 20px; /* Adjust margins for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9);
+    width: calc(30.33% - 20px); 
+    background-color: #316FF6;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 40px;
+    
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.container img{
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.accessory-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accessory-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #316FF6;
+    border-radius: 5px;
+    background-color: #316FF6;
+    font-size: 16px;
+}
+.accessory-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.accessory-details.active {
+    display: block;
+}
+.show-details{
+    background-color: #316FF6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9);
+    color: #fff;
+    width: 40% !important;
+    height: 50px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+#sendRequestButton{
+    background-color: #316FF6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9);
+    color: #fff;
+    width: 40% !important;
+    height: 50px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#requestForm input{
+    height: 60px; 
+    text-align: left;
+    width: 80%;
+    margin: 20px;
+    
+}
+#requestForm input ::placeholder{
+    color: #ccc;
+}

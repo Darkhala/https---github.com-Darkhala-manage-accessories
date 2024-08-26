@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hr.css">
+    <title>HR Page</title>
+</head>
+<body>
+    <header>
+        <h1>Requested Accessories</h1>
+        <ul class="accessory-list">
+            <li
+            style="background-color: #316FF6;">
+                <button class="show-details" onclick="redirectToPage('Selecteditems.html')">Selected Accessories</button>
+                <button class="show-details" onclick="showreturnedDetails('returneditems.html')">Returned Accessories</button>
+
+            </li>
+        </ul>
+        <a href="signup.html">Logout</a>
+    </header>
+    <div class="holder">
+
+    <div class="container">
+        <h2>Accessory Requests</h2>
+        <ul id="accessoryRequests" class="accessory-list">
+            <!-- Request items will be added here dynamically -->
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Process Accessory Requests</h2>
+        <form id="processRequestForm">
+            <label for="requestId">Request ID:</label>
+            <input type="text" id="requestId" required>
+            <button type="button" id="processRequestButton">Process Request</button>
+            <a href="processedrequestsreport.html" class="btn-loginpage">click here to view processed requests</a>
+        </form>
+    </div>
+</div>
+ <script>
+            function redirectToPage() {
+            // Redirect to another HTML page
+            window.location.href = "Selecteditems.html";
+        }
+</script>
+<script>
+    function showreturnedDetails() {
+    // Redirect to another HTML page
+    window.location.href = "returneditems.html";
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./hr.js"></script>
+</body>
+</html>

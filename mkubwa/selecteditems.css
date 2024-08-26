@@ -1,0 +1,141 @@
+/* CSS styles for the selecteditems.css file */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Green */
+    color: #fff; /* White */
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    color: wheat;
+    margin-right: 20px;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #4CAF50;
+}
+
+.accessory-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.accessory-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.accessory-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.accessory-details.active {
+    display: block;
+}
+
+.show-details {
+    background-color: #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 45%;
+    height: 50px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-details:hover {
+    background-color: #45a049;
+}
+
+/* Styles for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Green */
+    color: #fff; /* White */
+}
+
+
+/* Styles for containers */
+#selectedCablesContainer,
+#selectedKeyboardsContainer,
+#selectedMouseContainer,
+#selectedLaptopsContainer,
+#selectedDevicesContainer {
+    border-bottom: #4CAF50 solid 1px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for filter section */
+.filter-section {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section label {
+    font-size: 16px;
+}
+
+.filter-section input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.filter-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-section button:hover {
+    background-color: #f0f0f0;
+}

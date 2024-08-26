@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mouse.css">
+    <title>Available Mouse</title>
+</head>
+<body>
+    <header>
+        <h1>Available Accessories</h1>
+        <a href="signup.html">Logout</a>
+        <!-- <button onclick="updatePageToDatabase()">Update Page</button> -->
+
+    </header>
+    <div class="holder">
+        <h1 class="title">Available Mouse</h1>
+        <div class="keys">
+            <div>
+                <label for="username">Employee Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="mouse" id="mouse1">
+                <img src="images/DELL-Wired-Mouse-removebg-preview.png" alt="Dell wired mouse">
+                <p>Dell wired</p>
+                <p>Available: <span id="mouse1Count"></span></p>
+                <button onclick="selectMouse(1)">Select</button>
+                <button onclick="returnMouse(1)">Return</button>
+            </div>
+
+            <div class="mouse" id="mouse2">
+                <img src="images/mouse1.png" alt="Dell wireless mouse">
+                <p>Dell wireless</p>
+                <p>Available: <span id="mouse2Count"></span></p>
+                <button onclick="selectMouse(2)">Select</button>
+                <button onclick="returnMouse(2)">Return</button>
+            </div>
+
+            <div class="mouse" id="mouse3">
+                <img src="images/wirelessmouse.png" alt="HP wireless mouse">
+                <p>HP wireless</p>
+                <p>Available: <span id="mouse3Count"></span></p>
+                <button onclick="selectMouse(3)">Select</button>
+                <button onclick="returnMouse(3)">Return</button>
+            </div>
+
+            <div class="mouse" id="mouse4">
+                <img src="images/wiredmouse.png" alt="HP wired mouse">
+                <p>HP wired</p>
+                <p>Available: <span id="mouse4Count"></span></p>
+                <button onclick="selectMouse(4)">Select</button>
+                <button onclick="returnMouse(4)">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./mouse.js"></script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="storage_devices.css">
+    <title>Available Storage Devices</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Available Accessories</h1>
+        <a href="signup.html">Logout</a>
+        <!-- <button onclick="updatePageToDatabase()">Update Page</button> -->
+
+    </header>
+
+    <div class="holder">
+        <h1 class="title" >Available Storage Devices</h1>
+
+        <div class="storage-devices">
+            <div>
+                <label for="username">Employee Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="storage-device" id="device1">
+                <img src="images/flash_drive.png" alt=" Flash Drive">
+                <p class="device-name">Flash Drive</p>
+                <p>Available: <span id="device1Count"></span></p>
+                <button onclick="selectDevice(1)">Select</button>
+                <button onclick="returnDevice(1)">Return</button>
+            </div>
+            <div class="storage-device" id="device2">
+                <img src="images/Hard_drive.png" alt="External Hard Drive">
+                <p class="device-name">External Hard Drive</p>
+                <p>Available: <span id="device2Count"></span></p>
+                <button onclick="selectDevice(2)">Select</button>
+                <button onclick="returnDevice(2)">Return</button>
+            </div>
+            <div class="storage-device" id="device3">
+                <img src="images/SD_card.png" alt="SD_card">
+                <p class="device-name">SD_card</p>
+                <p>Available: <span id="device3Count"></span></p>
+                <button onclick="selectDevice(3)">Select</button>
+                <button onclick="returnDevice(3)">Return</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./storage_devices.js"></script>
+</body>
+</html>

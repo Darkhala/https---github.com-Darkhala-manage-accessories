@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./returneditems.css">
+    <title>Returned Items</title>
+</head>
+<body>
+    <header>
+        <h1>Returned Items</h1>
+            <li>
+                <button class="show-details" onclick="redirectToPage('Selecteditems.html')">Selected Accessories</button>
+                <button class="show-details" onclick="showreturnedDetails('hr.html')">Requested Accessories</button>
+
+            </li>
+        
+        <a href="signup.html">Logout</a>
+    </header>
+
+        <!-- Date filter -->
+        <div class="filter-section">
+            <label for="filterDate">Select a Date:</label>
+            <input type="date" id="filterDate">
+            <button onclick="filterByDate()">View report</button>
+        </div>
+        <script>
+             function filterByDate() {
+            const selectedDate = document.getElementById('filterDate').value;
+
+            // Call populateReturnedItems function with date filter for each section
+            populateReturnedItems('returnedCablesContainer', 'returnedcables', selectedDate);
+            populateReturnedItems('returnedKeyboardsContainer', 'returnedkeyboards', selectedDate);
+            populateReturnedItems('returnedMouseContainer', 'returnedmouse', selectedDate);
+            populateReturnedItems('returnedLaptopsContainer', 'returnedlaptops', selectedDate);
+            populateReturnedItems('returnedDevicesContainer', 'returneddevices', selectedDate);
+        }
+        </script>
+    <h1>Returned Cables</h1>
+    <div id="returnedCablesContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Returned Keyboards</h1>
+    <div id="returnedKeyboardsContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Returned Mouse</h1>
+    <div id="returnedMouseContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Returned Laptops</h1>
+    <div id="returnedLaptopsContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <h1>Returned Devices</h1>
+    <div id="returnedDevicesContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+    <h1>Returned Toolkits</h1>
+    <div id="returnedToolkitsContainer" style="    border-bottom: #3b5998 solid 1px;"></div>
+
+    <script>
+        function redirectToPage() {
+        // Redirect to another HTML page
+        window.location.href = "Selecteditems.html";
+    }
+</script>
+<script>
+function showreturnedDetails() {
+// Redirect to another HTML page
+window.location.href = "hr.html";
+}
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./returneditems.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cables.css">
+    <title>Available cables</title>
+</head>
+<body>
+    <header>
+        <h1>Available Accessories</h1>
+        <a href="signup.html">Logout</a>
+        <button onclick="updatePageToDatabase()">Update Page</button>
+    </header>
+    <div class="holder">
+        <h1 class="title">Available cables</h1>
+        <div class="keys">
+            <div>
+                <label for="username">Employee Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="cables" id="cable1">
+                <img src="images/monitorpowercable.png" alt="Monitor power cable">
+                <p class="cable-name">Monitor power cable</p>
+                <p>Available: <span id="cable1Count"></span></p>
+                <button onclick="selectCable(1)">Select</button>
+                <button onclick="returnCable(1)">Return</button>
+            </div>
+
+            <div class="cables" id="cable2">
+                <img src="images/laptoppowercable.png" alt="Laptop power cable">
+                <p class="cable-name">Laptop power cable</p>
+                <p>Available: <span id="cable2Count"></span></p>
+                <button onclick="selectCable(2)">Select</button>
+                <button onclick="returnCable(2)">Return</button>
+            </div>
+
+            <div class="cables" id="cable3">
+                <img src="images/hdmi_cable.png" alt="HDMI to HDMI cable">
+                <p class="cable-name">HDMI to HDMI cable</p>
+                <p>Available: <span id="cable3Count"></span></p>
+                <button onclick="selectCable(3)">Select</button>
+                <button onclick="returnCable(3)">Return</button>
+            </div>
+
+            <div class="cables" id="cable4">
+                <img src="images/vgacable.png" alt="VGA cable">
+                <p class="cable-name">VGA cable</p>
+                <p>Available: <span id="cable4Count"></span></p>
+                <button onclick="selectCable(4)">Select</button>
+                <button onclick="returnCable(4)">Return</button>
+            </div>
+
+            <div class="cables" id="cable5">
+                <img src="images/hdmitovga.png" alt="HDMI to VGA cable">
+                <p class="cable-name">HDMI to VGA cable</p>
+                <p>Available: <span id="cable5Count"></span></p>
+                <button onclick="selectCable(5)">Select</button>
+                <button onclick="returnCable(5)">Return</button>
+            </div>
+
+            <div class="cables" id="cable6">
+                <img src="images/usbprintercable.png" alt="USB printer cable">
+                <p class="cable-name">USB printer cable</p>
+                <p>Available: <span id="cable6Count"></span></p>
+                <button onclick="selectCable(6)">Select</button>
+                <button onclick="returnCable(6)">Return</button>
+            </div>
+
+            <div class="cables" id="cable7">
+                <img src="images/2pin_power_cable-removebg-preview.png" alt="2-pin power cable">
+                <p class="cable-name">2-pin power cable</p>
+                <p>Available: <span id="cable7Count"></span></p>
+                <button onclick="selectCable(7)">Select</button>
+                <button onclick="returnCable(7)">Return</button>
+            </div>
+
+            <div class="cables" id="cable8">
+                <img src="images/Ethernet-Cable-removebg-preview.png" alt="Ethernet cable">
+                <p class="cable-name">Ethernet cable</p>
+                <p>Available: <span id="cable8Count"></span></p>
+                <button onclick="selectCable(8)">Select</button>
+                <button onclick="returnCable(8)">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="cables.js"></script>
+</body>
+</html>
+
+

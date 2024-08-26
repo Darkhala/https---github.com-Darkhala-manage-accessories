@@ -1,0 +1,35 @@
+.header {
+    background: linear-gradient(to bottom,  rgb(0, 0, 0,1),rgba(255,255,255,0.0)); 
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-container {
+    flex: 1; /* Take up one part of the header */
+}
+
+.navigation-container {
+    flex: 2; /* Take up two parts of the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    float: left;
+}
+.logo img {
+    width: 300px;
+    height: auto;
+    float: left;
+}
+.links{
+    display: block;
+    margin-right: 20px;
+}

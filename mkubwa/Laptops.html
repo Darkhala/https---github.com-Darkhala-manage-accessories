@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./laptops.css">
+    <title>Available Laptops</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Available Accessories</h1>
+        <a href="signup.html">Logout</a>
+        <!-- <button onclick="updatePageToDatabase()">Update Page</button> -->
+
+    </header>
+
+    <div class="holder">
+        <h1 class="title" >Available Laptops</h1>
+
+        <div class="laptops">
+            <div>
+                <label for="username">Employee Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="laptop" id="laptop1">
+                <img src="images/ASUS.png" alt="Asus Laptop">
+                <p class="laptop-name">Asus Laptop</p>
+                <p>Available: <span id="laptop1Count"></span></p>
+                <button onclick="selectLaptop(1)">Select</button>
+                <button onclick="returnLaptop(1)">Return</button>
+            </div>
+            <div class="laptop" id="laptop2">
+                <img src="images/macbook.png" alt="Macbook Laptop">
+                <p class="laptop-name">Macbook Laptop</p>
+                <p>Available: <span id="laptop2Count"></span></p>
+                <button onclick="selectLaptop(2)">Select</button>
+                <button onclick="returnLaptop(2)">Return</button>
+            </div>
+            <div class="laptop" id="laptop3">
+                <img src="images/Dell laptop.png" alt="Dell Laptop">
+                <p class="laptop-name">Dell Laptop</p>
+                <p>Available: <span id="laptop3Count"></span></p>
+                <button onclick="selectLaptop(3)">Select</button>
+                <button onclick="returnLaptop(3)">Return</button>
+            </div>
+            <div class="laptop" id="laptop4">
+                <img src="images/hp laptop.png" alt="hp Laptop">
+                <p class="laptop-name">hp Laptop</p>
+                <p>Available: <span id="laptop4Count"></span></p>
+                <button onclick="selectLaptop(4)">Select</button>
+                <button onclick="returnLaptop(4)">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./laptops.js"></script>
+</body>
+</html>

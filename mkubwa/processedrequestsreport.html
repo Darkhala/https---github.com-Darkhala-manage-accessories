@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Requests Report</title>
+    <link rel="stylesheet" href="processedrequestsreport.css">
+</head>
+<body>
+    <div class="container">
+        <div class="filter-section">
+            <label for="filterDate">Select a Date:</label>
+            <input type="date" id="filterDate">
+            <button onclick="filterByDate()">View report</button>
+            <button onclick="generateWeeklyReport()">View Weekly Report</button>
+        </div>
+        
+        <h1>Processed Requests Report</h1>
+        <ul id="processedRequests"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="./processedrequestsreport.js"></script>
+</body>
+</html>

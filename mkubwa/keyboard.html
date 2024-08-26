@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keyboard.css">
+    <title>Available Keyboards</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Available Accessories</h1>
+        <a href="signup.html">Logout</a>
+     <!-- <button onclick="updatePageToDatabase()">Update Page</button> -->
+
+    </header>
+
+    <div class="holder">
+        <h1 class="title" >Available Keyboards</h1>
+
+        <div class="keys">
+            <div>
+                <label for="username">Employee Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="keyboard" id="keyboard1">
+                <img src="images/Keyboard1.png" alt="hp Qwerty">
+                <p class="keyboard-name">hp Qwerty</p>
+                <p>Available: <span id="keyboard1Count"></span></p>
+                <button onclick="selectKeyboard(1)">Select</button>
+                <button onclick="returnKeyboard(1)">Return</button>
+            </div>
+
+            <div class="keyboard" id="keyboard2">
+                <img src="images/dellkeyboard.png" alt="Dell Keyboard">
+                <p class="keyboard-name">Dell Keyboard</p>
+                <p>Available: <span id="keyboard2Count"></span></p>
+                <button onclick="selectKeyboard(2)">Select</button>
+                <button onclick="returnKeyboard(2)">Return</button>
+            </div>
+
+            <div class="keyboard" id="keyboard3">
+                <img src="images/keyboardbg.png" alt="Lenovo Keyboard">
+                <p class="keyboard-name">Lenovo Keyboard</p>
+                <p>Available: <span id="keyboard3Count"></span></p>
+                <button onclick="selectKeyboard(3)">Select</button>
+                <button onclick="returnKeyboard(3)">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./keyboard.js"></script>
+</body>
+</html>

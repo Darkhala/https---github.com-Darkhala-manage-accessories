@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Toolkit.css">
+    <title>Available Toolkits</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Available Toolkits</h1>
+        <a href="signup.html">Logout</a>
+        <!--<button onclick="updatePageToDatabase()">Update Page</button> -->
+    </header>
+
+    <div class="holder">
+        <h1 class="title">Available Toolkits</h1>
+
+        <div class="toolkits">
+            <div>
+                <label for="username">Employee Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="toolkit" id="toolkit1">
+                <img src="images/hi-spec.png" alt="hi_spec">
+                <p class="toolkit-name">hi_spec</p>
+                <p>Available: <span id="toolkit1Count"></span></p>
+                <button onclick="selectToolkit(1)">Select</button>
+                <button onclick="returnToolkit(1)">Return</button>
+            </div>
+            <div class="toolkit" id="toolkit2">
+                <img src="images/ifixit.png" alt="ifixit">
+                <p class="toolkit-name">ifixit</p>
+                <p>Available: <span id="toolkit2Count"></span></p>
+                <button onclick="selectToolkit(2)">Select</button>
+                <button onclick="returnToolkit(2)">Return</button>
+            </div>
+            <div class="toolkit" id="toolkit3">
+                <img src="images/KALAIDUN_33.png" alt="Kalaidun_33">
+                <p class="toolkit-name">Kalaidun_33</p>
+                <p>Available: <span id="toolkit3Count"></span></p>
+                <button onclick="selectToolkit(3)">Select</button>
+                <button onclick="returnToolkit(3)">Return</button>
+            </div>
+            <div class="toolkit" id="toolkit4">
+                <img src="images/KALAIDUN_82.png" alt="Kalaidun_82">
+                <p class="toolkit-name">Kalaidun_82</p>
+                <p>Available: <span id="toolkit4Count"></span></p>
+                <button onclick="selectToolkit(4)">Select</button>
+                <button onclick="returnToolkit(4)">Return</button>
+            </div>
+            <div class="toolkit" id="toolkit5">
+                <img src="images/ORIA_Precision.png" alt="Oria_Precision">
+                <p class="toolkit-name">Oria_Precision</p>
+                <p>Available: <span id="toolkit5Count"></span></p>
+                <button onclick="selectToolkit(5)">Select</button>
+                <button onclick="returnToolkit(5)">Return</button>
+            </div>
+            <div class="toolkit" id="toolkit6">
+                <img src="images/Rosewill_RTK.png" alt="Rosewill_RTK">
+                <p class="toolkit-name">Rosewill_RTK</p>
+                <p>Available: <span id="toolkit6Count"></span></p>
+                <button onclick="selectToolkit(6)">Select</button>
+                <button onclick="returnToolkit(6)">Return</button>
+            </div>
+            <div class="toolkit" id="toolkit7">
+                <img src="images/wirehard.png" alt="Wirehard">
+                <p class="toolkit-name">Wirehard</p>
+                <p>Available: <span id="toolkit7Count"></span></p>
+                <button onclick="selectToolkit(7)">Select</button>
+                <button onclick="returnToolkit(7)">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script src="./Toolkit.js"></script>
+</body>
+</html>

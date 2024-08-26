@@ -1,0 +1,98 @@
+/* Add your CSS styles for the toolkits page here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #316FF6;
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+}
+
+header h1 {
+    margin-right: auto; /* Adjusted margin to auto to center */
+    color: wheat;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    color: wheat;
+    margin-right: 50px;
+}
+
+.holder {
+    padding-top: 90px;
+    background-size: cover;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.title {
+    color: #333;
+}
+
+.cables {
+    margin: 0 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(30.33% - 20px);
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.cables img {
+    width: 100%; /* Adjusted to ensure image fills its container */
+    height: auto; /* Ensure aspect ratio is maintained */
+    border-radius: 10px 10px 0 0; /* Rounded corners for top */
+}
+
+.cables p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cables button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    background-color: #316FF6;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cables button:hover {
+    background-color: #2458b8;
+}
+
+.cables span {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}

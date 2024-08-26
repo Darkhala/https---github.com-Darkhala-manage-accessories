@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hrlogin.css">
+    <title>Company Login</title>
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "hr" && password === "Companyhr@254.pass") {
+                console.log("HR logged in");
+                window.location.href = "hr.html";
+            } else {
+                const errorElement = document.getElementById("error-message");
+                errorElement.textContent = "input the correct HR username or password"; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:wheat;"
+    >REPLACE TECH SOLUTIONS</h1>
+    <div class="container"
+    style="background: url('./images/techbg.png');">
+        <form class="login-form">
+            <h2
+            style="color: wheat;">LOGIN</h2> 
+            <div class="input-group">
+                <label for="username"
+                style="color: wheat;">HR_username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password"
+                style="color: wheat;">HR_Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" onclick="login()">Login</button>
+            <p id="error-message" style="color: red;"></p>
+        </form>
+    </div>
+</body>
+</html>

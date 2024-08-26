@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accessories.css">
+    <title>Available Accessories</title>
+</head>
+<body>
+    <div class="body">
+    <header>
+        <h1>AVAILABLE ACCESSORIES</h1>
+        <a href="signup.html">Logout</a>
+    </header>
+    <div class="holder">
+        <div class="keys">
+
+            <div class="container">
+                <h2 style="color: #ccc;">Request Accessories</h2>
+                <form id="requestForm">
+                    <label for="employeeName" style="color: black;">Employee's Name:</label>
+                    <input type="text" placeholder="Write your Name" id="employeeName" required >
+                    <label for="accessoryRequest" style="color: black;">Type your request:</label>
+                    <input type="text" placeholder="Write the accessory you couldn't find in the system" id="accessoryRequest" required >
+                    <button type="button" id="sendRequestButton">Send Your Request</button>
+                </form>
+            </div>
+    <div class="container">
+        <h2 style="color: #ccc;">View Accessories</h2>
+        <h2 class="accessory-name">Keyboards</h2>
+        <img src="images/keyboardbg.png" alt="">
+        <ul class="accessory-list">
+            <li
+            style="background-color: #316FF6;">
+                <button class="show-details" onclick="showAccessoryDetails('keyboard.html')">Show Details</button>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        function showAccessoryDetails(url) {
+            window.location.href = url;
+        }
+    </script>
+    
+            </li>
+            <div class="container">
+                <h2 style="color: #ccc;">View Accessories</h2>
+                <h2 class="accessory-name">cables</h2>
+                <img src="images/cablesbg (1).png" alt="">
+                <ul class="accessory-list">
+                    <li
+                    style="background-color: #316FF6;">
+                        <button class="show-details" onclick="showAccessoryDetails('cables.html')">Show Details</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <script>
+                function showAccessoryDetails(url) {
+                    window.location.href = url;
+                }
+            </script>
+            </li>
+            <div class="container">
+                <h2 style="color: #ccc;">View Accessories</h2>
+                <h2 class="accessory-name">Mouse</h2>
+                <img src="images/mousebg.png" alt="">
+                <ul class="accessory-list">
+                    <li
+                    style="background-color: #316FF6;">
+                        <button class="show-details" onclick="showAccessoryDetails('mouse.html')">Show Details</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <h2 style="color: #ccc;">View Accessories</h2>
+                <h2 class="accessory-name">Laptops</h2>
+                <img src="images/hp laptop.png" alt="">
+                <ul class="accessory-list">
+                    <li
+                    style="background-color: #316FF6;">
+                        <button class="show-details" onclick="showAccessoryDetails('Laptops.html')">Show Details</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <h2 style="color: #ccc;">View Accessories</h2>
+                <h2 class="accessory-name">Storage devices</h2>
+                <img src="images/flash_drive.png" alt="">
+                <ul class="accessory-list">
+                    <li
+                    style="background-color: #316FF6;">
+                        <button class="show-details" onclick="showAccessoryDetails('storage_devices.html')">Show Details</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <h2 style="color: #ccc;">View Accessories</h2>
+                <h2 class="accessory-name">Laptops</h2>
+                <img src="images/hi-spec-removebg-preview.png" alt="">
+                <ul class="accessory-list">
+                    <li
+                    style="background-color: #316FF6;">
+                        <button class="show-details" onclick="showAccessoryDetails('Toolkit.html')">Show Details</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <script>
+                function showAccessoryDetails(url) {
+                    window.location.href = url;
+                }
+            </script>
+            </li>
+
+        </ul>
+        <br>
+
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./accessories.js"></script>
+</body>
+</html>
+
